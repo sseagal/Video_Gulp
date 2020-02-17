@@ -51,7 +51,8 @@ body
 	//background-image: url(../img/headbg.jpg)
 	min-height: 800px
 	height: 100vh
-	//background-color: $dark
+	background-color: $dark
+	//color: #fff
 	.top-line
 		padding-top: 40px
 		position: absolute
@@ -65,12 +66,44 @@ section, header
 
 section
 	background-color: #fff
-	
+
+.logo
+	img
+	width: 125
+	height: auto
+	margin-left: 45px
+
+.phone
+	position: absolute
+	right: 85px
+	top: 44px
+	font-family: firasans, sans-serif
+	font-size: 22px
+	white-space: nowrap
+.fas
+	font-size: 22px
+	color: #555
+	margin-right: 3px
+
 
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
+
+.hamburger
+	position: absolute
+	right: 0
+	top: 34px
+	.hamburger-box
+	width: 34px
+	.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+	border-radius: 0
+	color: #fff
+	width: 34px
+	height: 22px
+	background-color: #fff
+	
 
 .text-center
 	text-align: center
