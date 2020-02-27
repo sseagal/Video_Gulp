@@ -45,19 +45,18 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
-
-.ishome
-	.site-header
-	//background-image: url(../img/headbg.jpg)
-	min-height: 800px
-	height: 100vh
-	background-color: $dark
-	color: #fff
-	.top-line
-		padding-top: 40px
-		position: absolute
-		width: 100%
-		z-index: 1
+	&.ishome
+		.site-header
+		//background-image: url(../img/headbg.jpg)
+		min-height: 800px
+		height: 100vh
+		background-color: $dark
+		color: #fff
+		.top-line
+			padding-top: 40px
+			position: absolute
+			width: 100%
+			z-index: 1
 
 section, header
 	position: relative
@@ -99,7 +98,7 @@ section
 	top: 50px
 	.hamburger-box
 		width: 34px
-		.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+		.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
 			border-radius: 1px
 			color: #fff
 			width: 30px
