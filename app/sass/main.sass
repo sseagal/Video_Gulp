@@ -94,17 +94,23 @@ section
 
 .hamburger
 	position: absolute
-	right: 15px
+	right: 0px
 	top: 50px
+	color: #fff
 	.hamburger-box
 		width: 34px
-		.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+		height: 24px
+		content: " "
+		display: block
+		.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
 			border-radius: 1px
 			color: #fff
-			width: 30px
-			height: 2px
+			width: 34px
+			height: 4px
 			background-color: #fff
-	
+			display: block
+			content: " "
+		
 
 .text-center
 	text-align: center
