@@ -102,15 +102,32 @@ section
 		height: 24px
 		content: " "
 		display: block
-		.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+		.hamburger-inner		
 			border-radius: 1px
 			color: #fff
 			width: 34px
-			height: 4px
+			height: 2px
 			background-color: #fff
 			display: block
 			content: " "
-		
+		.hamburger-inner::after
+			border-radius: 1px
+			color: #fff
+			width: 34px
+			height: 2px
+			background-color: #fff
+			//display: block
+			content: " "
+			top: 8px
+		.hamburger-inner::before
+			border-radius: 1px
+			color: #fff
+			width: 34px
+			height: 2px
+			background-color: #fff
+			//display: block
+			content: " "
+			top: -8px
 
 .text-center
 	text-align: center
