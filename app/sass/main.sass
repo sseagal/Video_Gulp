@@ -102,15 +102,38 @@ section
 		height: 24px
 		content: " "
 		display: block
-		.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
-			border-radius: 1px
-			color: #fff
-			width: 34px
-			height: 4px
-			background-color: #fff
-			display: block
-			content: " "
+
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+	border-radius: 1px
+	color: #fff
+	width: 34px
+	height: 4px
+	background-color: #fff
+	display: block
+	content: " "
 		
+.mm-navbar
+	height:auto
+	position: relative
+	border: none
+	.mm-title
+		padding: 0
+	 img
+		width: 128px
+		height: auto
+		margin: 10px 0 35px
+
+html.mm-opened
+	overflow-y: scroll
+.mm-panels>.mm-panel.mm-hasnavbar
+	right: -18px
+.mm-listview>li:not(.mm-divider):after
+	display: none
+
+.mm-panels>.mm-panel:after, .mm-panels>.mm-panel:before
+	height: 0	
+.mm-panels>.mm-panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
+	margin-top: 0
 
 .text-center
 	text-align: center
