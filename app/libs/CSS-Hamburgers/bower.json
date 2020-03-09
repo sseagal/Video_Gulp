@@ -1,27 +1,44 @@
 {
-  "name": "CSS-Hamburgers",
-  "description": "CSS only Hamburgers, for Burger or CSS lovers.",
-  "version": "1.0.1",
-  "homepage": "https://github.com/osahan/CSS-Hamburgers",
-  "main": "dist/app/css-hamburgers.scss",
-  "authors": [
-    "Osahan <robi_osahan@yahoo.com>"
-  ],
+  "name": "css-hamburgers",
+  "version": "1.1.3",
+  "description": "Collection of tasty CSS-animated hamburger icons. Includes Sass files (modular and customizable), so cook up your own hamburger.",
+  "homepage": "https://jonsuh.com/hamburgers",
   "license": "MIT",
+  "author": {
+    "name": "Jonathan Suh",
+    "email": "hello@jonsuh.com",
+    "url": "https://jonsuh.com/hamburgers"
+  },
+  "main": "_sass/hamburgers/hamburgers.scss",
   "keywords": [
     "css",
-    "burger",
     "hamburger",
+    "hamburgers",
     "menu",
-    "navigation"
+    "sass",
+    "scss"
   ],
-  "homepage": "https://github.com/osahan/CSS-Hamburgers",
-  "moduleType": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonsuh/hamburgers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonsuh/hamburgers/issues"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "js",
+    "_js",
+    "css",
+    "*.mp4",
+    "*.ogv",
+    "*.webm",
+    "favicon.ico",
+    "hamburger.png",
+    "index.html",
+    "Gemfile",
+    "hamburgers.gemspec",
+    "lib"
   ]
 }

@@ -95,22 +95,27 @@ section
 .hamburger
 	position: absolute
 	right: 0px
-	top: 50px
+	top: 40px
 	color: #fff
 	.hamburger-box
 		width: 34px
 		height: 24px
 		content: " "
-		display: block
-
-.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+		//display: block
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before		
 	border-radius: 1px
 	color: #fff
 	width: 34px
-	height: 4px
+	height: 2px
 	background-color: #fff
-	display: block
+	//display: block
 	content: " "
+	//	.hamburger-inner::after			
+	//		content: " "
+	//		top: 8px
+	//	.hamburger-inner::before			
+	//		content: " "
+	//		top: -8px
 		
 .mm-navbar
 	height:auto
@@ -123,9 +128,10 @@ section
 		height: auto
 		margin: 10px 0 35px
 
-html.mm-opened
+//html.mm-opened
+body.mm-wrapper_opened
 	overflow-y: scroll
-.mm-panels>.mm-panel.mm-hasnavbar
+.mm-panels>.mm-panel .mm-panel_opened
 	right: -18px
 .mm-listview>li:not(.mm-divider):after
 	display: none
@@ -134,6 +140,7 @@ html.mm-opened
 	height: 0	
 .mm-panels>.mm-panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	margin-top: 0
+		
 
 .text-center
 	text-align: center

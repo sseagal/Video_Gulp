@@ -1,19 +1,16 @@
 $(function() {
 
 	$('#my-menu').mmenu({
-	extensions:['widescreen', 'theme-black', 'effect-menu-slide', 'pagedim-black'], 
+	extensions:[ "position-right", 'theme-black', 'effect-menu-slide', 'pagedim-black'], 
 	navbar: {
-		title: '<img src="img/logo.png" alt="Logo">' },
-	offCanvas: {
-		position: 'right'
-	}
+		title: '<img src="img/logo.png" alt="Logo">' }	
 	});
 
 	var api = $('#my-menu').data('mmenu');
-	api.bind('opened', function() {
+	api.bind('openPanel', function() {
 		$('.hamburger').addClass('is-active');
-	}).bind('closed', function() {
+	}).bind('closePanel', function() {
 		$('.hamburger').removeClass('is-active');
 	});
 });
- 
+  
