@@ -12,5 +12,11 @@ $(function() {
 	}).bind('closePanel', function() {
 		$('.hamburger').removeClass('is-active');
 	});
+
+	    $(document).ready(function () {
+      $(".navbar-toggle").on("click", function () {
+        $(this).toggleClass("active");
+      });
+    });
 });
   
