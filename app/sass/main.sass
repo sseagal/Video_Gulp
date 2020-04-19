@@ -101,6 +101,7 @@ section
 		width: 34px
 		height: 24px
 		content: " "
+		color: #fff
 		//display: block
 .hamburger-inner, .hamburger-inner::after, .hamburger-inner::before		
 	border-radius: 1px
@@ -131,16 +132,68 @@ section
 //html.mm-opened
 body.mm-wrapper_opened
 	overflow-y: scroll
-.mm-panels>.mm-panel .mm-panel_opened
+.mm-panels>#mm-0.mm-panel.mm-panel_opened
 	right: -18px
 .mm-listview>li:not(.mm-divider):after
 	display: none
+li.mm-selected.mm-listitem.mm-listitem_selected
+	background-color: transparent
+	color: $accent
 
 .mm-panels>.mm-panel:after, .mm-panels>.mm-panel:before
 	height: 0	
 .mm-panels>.mm-panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	margin-top: 0
+
+//#my-menu
+	color: aquamarine
 		
+.mm-panels
+	>#mm-0.mm-panel.mm-panel_opened
+		>ul.mm-listview > 
+			>li.mm-listitem.mm-listitem_selected
+				>a.mm-listitem_text
+					color: aquamarine			
+					//transition: color .25s ease
+					padding:
+					  	left: 14%
+					  	right: 14%
+					  	top: 8px
+					a:hover
+					  	color: $accent
+					&:before	
+				  	content: '\f219'
+				  	font-family: fontawesome
+				  	margin-right: 8px
+					text-decoration: none
+					font-size: 128px
+					color: #fff  	
+	//li.active
+		//&>a
+			//color: $accent
+//.mm-listitem a, .mm-listitem a:hover 
+    //color: aquamarine
+	//> li
+	    //> a
+		  	//transition: color .25s
+		  	//padding:
+			  	//left: 14%
+			  	//right: 14%
+			  	//top: 8px
+			  	//&.hover
+			  		//color: $accent
+			  	//&.before	
+				  	//content: '\f219'
+				  	//font-family: fontawesome
+				  	//margin-right: 8px
+					//text-decoration: none
+					//font-size: 128px
+					//color: #fff
+				//&.active
+				  	//&>a
+				   	//color: $accent
+
+
 
 .text-center
 	text-align: center

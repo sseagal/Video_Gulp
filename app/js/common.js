@@ -7,16 +7,39 @@ $(function() {
 	});
 
 	var api = $('#my-menu').data('mmenu');
-	api.bind('openPanel', function() {
+
+	api.bind('open:finish', function() {
 		$('.hamburger').addClass('is-active');
-	}).bind('closePanel', function() {
+	})
+	api.bind('close:finish', function() {
 		$('.hamburger').removeClass('is-active');
 	});
 
-	    $(document).ready(function () {
-      $(".navbar-toggle").on("click", function () {
-        $(this).toggleClass("active");
-      });
-    });
+	//    $(document).ready(function () {
+    //  $(".navbar-toggle").on("click", function () {
+    //    $(this).toggleClass("active");
+    //  });
+  //  });
+
+  	//<script>
+    //document.addEventListener(
+    //    "DOMContentLoaded", () => {
+    //        var menu = new Mmenu( "#my-menu" );
+    //        var api = menu.API;
+
+    //        api.bind( "openPanel:start",
+    //            ( panel ) => {
+    //                console.log( "Started opening panel: " + panel.id );
+    //            }
+    //        );
+    //        api.bind( "openPanel:finish",
+    //            ( panel ) => {
+    //                console.log( "Finished opening panel: " + panel.id );
+    //            }
+    //        );
+    //    }
+    //);
+//</script>
+
 });
   
