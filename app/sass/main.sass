@@ -66,6 +66,48 @@ section, header
 section
 	background-color: #fff
 
+h1, h2, h3 ,h4, h5
+	line-height: 1.4
+	text-transform: uppercase
+.button
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: $accent
+	padding: 15px 45px
+	font-size: 13px
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 3px
+	border-radius: 2px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	&::after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		height: 45px
+		bottom: 0
+		width: 100%
+		background-color: darken($accent, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($accent, 5%)
+		&:after
+			opacity: .22
+
+//.welcome
+//	text-align: center
+
 .logo
 	img
 	width: 125px
@@ -192,6 +234,38 @@ li.mm-selected.mm-listitem.mm-listitem_selected
 				//&.active
 				  	//&>a
 				   	//color: $accent
+
+.header-flex
+	display: flex
+	height: 100%
+	position: relative
+	top: 0
+.flex-center
+	margin: auto
+
+.header-composition
+	text-align: center
+	position: relative
+	//p
+	//	margin-top: 40px
+	.welcome
+		font-size: 14px
+		text-transform: uppercase
+		display: flex
+		align-items: center
+		white-space: nowrap
+		margin: 0
+		margin-bottom: -10px
+		p
+			span
+				margin: 0 10px
+		&::before, &::after
+			content: ''
+			height: 1px
+			width: 100%
+			position: relative
+			background-color: #fff
+			display: inline-block
 
 
 
