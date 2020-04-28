@@ -152,7 +152,7 @@ h1, h2, h3 ,h4, h5
 	height: 2px
 	background-color: #fff
 	//display: block
-	content: " "
+	content: " " 
 	//	.hamburger-inner::after			
 	//		content: " "
 	//		top: 8px
@@ -246,9 +246,11 @@ li.mm-selected.mm-listitem.mm-listitem_selected
 .header-composition
 	text-align: center
 	position: relative
-	//p
-	//	margin-top: 40px
-	.welcome
+	p
+		margin-top: 40px
+
+.welcome
+	p
 		font-size: 14px
 		text-transform: uppercase
 		display: flex
@@ -256,9 +258,8 @@ li.mm-selected.mm-listitem.mm-listitem_selected
 		white-space: nowrap
 		margin: 0
 		margin-bottom: -10px
-		p
-			span
-				margin: 0 10px
+		span
+			margin: 0 10px
 		&::before, &::after
 			content: ''
 			height: 1px
@@ -266,8 +267,16 @@ li.mm-selected.mm-listitem.mm-listitem_selected
 			position: relative
 			background-color: #fff
 			display: inline-block
-
-
+	h1
+		font-weight: 100
+		font-size: 70px
+		margin: 0
+		line-height: 1.6
+		border-bottom: 1px solid #fff
+	strong
+		display: block
+		text-transform: uppercase
+			
 
 .text-center
 	text-align: center
