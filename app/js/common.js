@@ -15,6 +15,16 @@ $(function() {
 		$('.hamburger').removeClass('is-active');
 	});
 
+	$('.carousel-services').owlCarousel({
+		loop: true,
+		nav: true,
+		autoplay: true,
+		autoplayTimeout: 5000,
+		smartSpeed: 700
+		navText: ['<i class="fas fa-angle-double-left"></i>', '<i class="fas fa-angle-double-right"></i>']
+	});
+	
+
 	//    $(document).ready(function () {
     //  $(".navbar-toggle").on("click", function () {
     //    $(this).toggleClass("active");

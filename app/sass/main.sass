@@ -64,7 +64,7 @@ section, header
 	background-position: center
 
 section
-	background-color: #fff
+	//background-color: #fff
 
 h1, h2, h3 ,h4, h5
 	line-height: 1.4
@@ -340,6 +340,11 @@ li.mm-selected.mm-listitem.mm-listitem_selected
 	.phone-h
 		font-family: firasans, sans-serif
 		text-align: center
+
+$colors: $blue, $red, $accent
+@for $i from 1 through length($colors)
+	.carousel-services .owl-item:nth-child(#{length($colors)}n+#{$i})
+		background-color: nth($colors, $i)
 
 
 

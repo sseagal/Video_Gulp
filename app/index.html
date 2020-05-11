@@ -12,16 +12,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon"/>
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png"/>
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-	<link rel="stylesheet" href="libs/css-hamburgers/dist/hamburgers.css">
+	<link rel="stylesheet" href="libs/css-hamburgers/dist/hamburgers.css"/>
 	<script src="js/jquery-3.4.1.min.js"></script>
 <!--	<link href="dist/hamburgers.css" rel="stylesheet"> -->
 
-	<link rel="stylesheet" href="libs/mmenu/dist/mmenu.css">
-	<link rel="stylesheet" href="libs/fontawesome/css/fontawesome.css">
+	<link rel="stylesheet" href="libs/mmenu/dist/mmenu.css"/>
+	<link rel="stylesheet" href="libs/fontawesome/css/fontawesome.css"/>
+	<link rel="stylesheet" href="/libs/owl.carousel/dist/assets/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="/libs/owl.carousel/dist/assets/owl.theme.default.css"/>
 
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#fff">
@@ -43,7 +45,7 @@
         	style="background-image: url(img/hbg.jpg); min-height: 900px; height: 100vh;">
         		<div class="top-line">
         			<a href="#" class="logo"><img src="img/logo.png" alt="Logo"></a>
-        			<div class="phone">
+        			<div class="phone hidden-xs">
         				<i class="fas fa-mobile-alt"></i> +38 (097)91-51600</div>
         			<a href="#my-menu" class="hamburger hamburger--emphatic js-hamburger ">
         				<span class="hamburger-box">
@@ -122,7 +124,14 @@
 
         </div>
         <div id="my-content">
-        	
+        	<section class="s-services">
+        		<div class="owl-carousel carousel-services">
+        			<div class="carousel-services-item">Далеко-далеко за словесными горами.</div>
+        			<div class="carousel-services-item">Свою страна они своих</div>
+        			<div class="carousel-services-item">Свою вопроса коварный образ</div>
+        			<div class="carousel-services-item">Продолжил вершину свой дорогу</div>	
+        		</div>
+        	</section>
 
         </div>
         
@@ -134,10 +143,11 @@
 
 	
 	<link rel="stylesheet" href="css/main.min.css">
-	<script src="js/scripts.min.js"></script>
-	<script src="libs/jquery/dist/jquery.min.js"></script>
+	<script src="../js/jquery-1.11.1.min.js"></script>
+	<script src="js/scripts.min.js"></script>	
 	<script src="libs/mmenu/dist/mmenu.js"></script>
 	<script src="libs/fontawesome/js/all.min.js"></script>
+	<script src="../libs/owl.carousel/dist/owl.carousel.min.js"></script>
 
 </body>
 </html>
