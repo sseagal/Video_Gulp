@@ -36,7 +36,13 @@ $(function() {
 		}
 	});
 	
-
+	function carouselService(){
+		$('.carousel-services-item').each(function() {
+			var ths = $(this),
+				thsh = ths.find('.carousel-services-content').outerHeight();
+				ths.find('.carousel-services-image').css('min-height', thsh);
+		});
+	}carouselService();
 	//    $(document).ready(function () {
     //  $(".navbar-toggle").on("click", function () {
     //    $(this).toggleClass("active");
