@@ -355,8 +355,47 @@ $colors: $blue, $red, $accent
 		position: relative
 		display: flex
 		flex-direction: column-reverse
-	&-image
+		&:hover
+			.carousel-services-image
+				opacity: 1
+		.carousel-logo
+			text-align: center
+			img
+				width: 50px
+				height: auto
+				display: inline-block
+	.owl-item
+		&:nth-child(2n+2)
+			.carousel-services-item
+				flex-direction: column
+
+	&-image			
 		background-size: cover
-		
+		background-position: center
+		opacity: .8
+		transition: opacity .5s ease
+	&-content
+		display: flex
+		position: relative
+		padding: 50px 10%
+
+	&-composition
+		margin: auto
+		text-align: center
+		width: 100%
+		.h3
+			font-weight: 800
+			font-size: 28px
+			margin-top: 5px
+			margin-bottom: 20px
+			span
+			font-weight: normal
+			font-size: 18px
+			font-weight: 300
+			display: block
+
+.owl-carousel
+	.owl-item
+		backface-visibility: inherit
 
 @import "media" // Всегда в конце
