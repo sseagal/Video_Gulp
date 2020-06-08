@@ -15,8 +15,13 @@ $(function() {
 		$('.hamburger').removeClass('is-active');
 	});
 
+	$('.carousel-services').on('initialized.owl.carousel', function() {
+		setTimeout(function() {
+			carouselService()
+			}, 100);
+		});
 	$('.carousel-services').owlCarousel({
-		loop: true,
+		//loop: true,
 		nav: true,
 		autoplay: true,
 		autoplayTimeout: 5000,
@@ -36,24 +41,24 @@ $(function() {
 		}
 	});
 	
-	//function carouselService(){
-	//	$('.carousel-services-item').each(function() {
-	//		var ths = $(this),
-	//			thsh = ths.find('.carousel-services-content').outerHeight();
-	//			ths.find('.carousel-services-image').css('min-height', thsh);
-	//	});
-	//}carouselService();
+	function carouselService() {
+		$('.carousel-services-item').each(function() {
+			var ths = $(this),
+				thsh = ths.find('.carousel-services-content').outerHeight();
+				ths.find('.carousel-services-image').css('min-height', thsh);
+		});
+	}carouselService();
 
-	//$('.carousel-services-composition .h3').each(function()) {
-	//	var ths = $(this);
-	//	ths.html(ths.html().replace(/(\S+)\s*$/, '<span>$1</span>'));
-	//}
+	$('.carousel-services-composition .h3').each(function() {
+		var ths = $(this);
+		ths.html(ths.html().replace(/(\S+)\s*$/, '<span>$1</span>'));
+	});
 
 	//    $(document).ready(function () {
     //  $(".navbar-toggle").on("click", function () {
-    //    $(this).toggleClass("active");
+  	//   $(this).toggleClass("active");
     //  });
-  //  });
+    //});
 
   	//<script>
     //document.addEventListener(
