@@ -21,13 +21,14 @@ $(function() {
 			}, 100);
 		});
 	$('.carousel-services').owlCarousel({
-		//loop: true,
+		loop: true,
 		nav: true,
 		autoplay: true,
 		autoplayTimeout: 5000,
 		smartSpeed: 700,
 		navText: ['<i class="fas fa-angle-double-left"></i>', '<i class="fas fa-angle-double-right"></i>'],
 		responsiveClass: true,
+		dots: false,
 		responsive: {
 			0: {
 				items: 1
@@ -53,6 +54,16 @@ $(function() {
 		var ths = $(this);
 		ths.html(ths.html().replace(/(\S+)\s*$/, '<span>$1</span>'));
 	});
+
+	$('section .h2').each(function() {
+		var ths = $(this);
+		ths.html(ths.html().replace(/^(\S+)/, '<span>$1</span>'));
+	});
+
+	function onResize() {
+		$('.carousel-services-content').equalHeights();
+	}onResize();
+	window.onresize = function() {onResize()};
 
 	//    $(document).ready(function () {
     //  $(".navbar-toggle").on("click", function () {
