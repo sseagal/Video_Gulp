@@ -481,10 +481,15 @@ $colors: $blue, $red, $accent
 
 .fotorama
 	background-color: rgba($dark, 0.4)
-.fotorama_nav
-	&-wrap
-		position: absolute
-		bottom: 15px
-		
+
+	&_nav
+		&-wrap
+			position: absolute
+			bottom: 15px
+			padding: 0 30px
+			width: 100%
+	&_thumb
+		border: 5px #fff solid
+
 
 @import "media" // Всегда в конце
