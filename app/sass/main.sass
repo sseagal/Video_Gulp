@@ -489,7 +489,31 @@ $colors: $blue, $red, $accent
 			padding: 0 30px
 			width: 100%
 	&_thumb
-		border: 5px #fff solid
+		border: 4px #fff solid
+		transition: border-color .5s ease
+		&-border
+			border-color: #3d3c3c
+
+	&_nav:after, &_stage:after,
+	&_nav:before, &_stage:before
+		display: none
+
+	&__arr-
+		&-next, &-prev
+			&::before
+				font-family: fontawesome
+					font-size: 32px
+		&-next
+			&::before
+				content: '\f105'
+		&-prev
+			left: 25px
+			&::before
+				content: '\f104'
+	&__active
+		.fotorama__thumb
+			border-color: #3d3c3c
+			
 
 
 @import "media" // Всегда в конце
