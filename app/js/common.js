@@ -60,6 +60,28 @@ $(function() {
 		ths.html(ths.html().replace(/^(\S+)/, '<span>$1</span>'));
 	});
 
+	$('select').selectize();
+
+	//E-mail Ajax Send
+	$("form.callback").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			//alert("Thank you!");
+			$(th).find('.success').addClass('active').css('display', 'flex').hide().fadeIn();
+			setTimeout(function() {
+				$(th).find('.success').removeClass('active').fadeOut();
+				// Done Functions
+				th.trigger("reset");
+			}, 3000);
+		});
+		return false;
+	});
+
+
 	function onResize() {
 		$('.carousel-services-content').equalHeights();
 	}onResize();
