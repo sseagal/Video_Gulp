@@ -481,6 +481,13 @@ $colors: $blue, $red, $accent
 			height: 100%
 			position: absolute
 			background-color: rgba($accent, .92)
+	&-partners.section-overley
+		&::before
+			background-color: #fff
+		.h2
+			span
+				color: $accent
+
 
 
 .section-overley
@@ -634,6 +641,103 @@ select
 			
 		option
 			color: #333
+	.button
+		margin-top: 40px
+
+.reviews
+	text-align: center
+
+.owl-dots
+	width: 100%
+	text-align: center
+	margin-top: 60px
+	.owl-dot
+		width: 8px
+		height: 8px
+		background-color: #fff
+		border-radius: 10em
+		display: inline-block
+		margin: 5px
+		transition: background-color .5s ease, transform .5s ease
+		&.active
+			background-color: $accent
+			transform: scale(1.4)
+
+.review
+	margin-top: 10px
+	&-header
+		font-family: 'Times New Roman', serif
+		font-style: italic
+		font-size: 30px
+		font-weight: bold
+	&-date
+		font-family: 'Times New Roman', serif
+		font-style: italic
+		font-size: 15px
+		margin-top: 5px
+		color: #7a7777
+	&-stars
+		margin: 20px 0 30px
+		font-size: 14px
+		color: $accent	
+		.fa
+			margin: 0 2px
+	&-text
+		color: #95989A
+
+.quotes
+	position: absolute
+	width: 100%
+	&::before, &::after
+		content: ',,'
+		position: absolute
+		top: 180px
+		font-size: 56px
+		color: yellow
+		font-family: 'Times New Roman', serif
+		font-weight: bold
+		line-height: 0
+		transform: rotate(180deg)
+		display: block
+	&::before
+		top: 200px
+		left: -60px
+	&::after
+		right: -50px
+		transform: rotate(0)		#333
+
+.partners
+	.partner
+		height: 100%
+		display: flex
+		margin: auto
+	.owl-stage
+		display: flex
+	.owl-item
+		margin-top: 30px
+		img
+			max-width: 100%
+			width: auto
+			display: inline-block
+			margin: auto
+	.owl-nav
+		position: absolute
+		top: 0
+		width: 100%
+		z-index: 2
+		> div
+			position: absolute
+			top: 50px
+			color: #999
+			font-size: 30px
+			transition: opacity .5s ease
+			padding: 0 10px 0 10px
+			&:hover
+				opacity: .6
+			&.owl-prev
+				left: -60px
+			&.owl-next
+				right: -60px
 
 
 @import "media" // Всегда в конце
