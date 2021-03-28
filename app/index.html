@@ -22,6 +22,7 @@
 
 	<link rel="stylesheet" href="libs/mmenu/dist/mmenu.css"/>
 	<link rel="stylesheet" href="libs/fontawesome/css/fontawesome.css"/>
+	<link rel="stylesheet" href="path/to/fontawesome/css/fontawesome.min.css">
 	<link rel="stylesheet" href="/libs/owl.carousel/dist/assets/owl.carousel.min.css"/>
 	<link rel="stylesheet" href="/libs/owl.carousel/dist/assets/owl.theme.default.css"/>
 
@@ -39,6 +40,7 @@
 </head>
 
 <body class="ishome">
+	<div class="preloader"><div class="pulse"></div></div>
 	<div id="my-page">
         <div id="my-header" >
         	<header class="site-header" 
@@ -199,14 +201,14 @@
     					</div>
     					<div class="col-md-7">
     						<div class="section-gallery fotorama" data-nav="thumbs" data-thumbwidth="110" data-thumbheights="60" data-thumbborderwidth="4" data-thumbmargin="10" data-width="100%">
-    							<img src="img/photos/small/slide-1.jpg" alt="Фото салона">
-    							<img src="img/photos/small/slide-2.jpg" alt="Фото салона">
-    							<img src="img/photos/small/slide-3.jpg" alt="Фото салона">
-    							<img src="img/photos/small/slide-4.jpg" alt="Фото салона">
-    							<img src="img/photos/small/slide-5.jpg" alt="Фото салона">
-    							<img src="img/photos/small/slide-6.jpg" alt="Фото салона">
-    							<img src="img/photos/small/slide-7.jpg" alt="Фото салона">
-    							<img src="img/photos/small/slide-8.jpg" alt="Фото салона"> 							
+    							<a href="img/photos/small/slide-1.jpg"><img src="img/photos/thumb/slide-1.jpg" alt="Фото салона"></a>
+    							<a href="img/photos/small/slide-2.jpg"><img src="img/photos/thumb/slide-2.jpg" alt="Фото салона"></a>
+    							<a href="img/photos/small/slide-3.jpg"><img src="img/photos/thumb/slide-3.jpg" alt="Фото салона"></a>
+    							<a href="img/photos/small/slide-4.jpg"><img src="img/photos/thumb/slide-4.jpg" alt="Фото салона"></a>
+    							<a href="img/photos/small/slide-5.jpg"><img src="img/photos/thumb/slide-5.jpg" alt="Фото салона"></a>
+    							<a href="img/photos/small/slide-6.jpg"><img src="img/photos/thumb/slide-6.jpg" alt="Фото салона"></a>
+    							<a href="img/photos/small/slide-7.jpg"><img src="img/photos/thumb/slide-7.jpg" alt="Фото салона"></a>
+    							<a href="img/photos/small/slide-8.jpg"><img src="img/photos/thumb/slide-8.jpg" alt="Фото салона"></a>							
     						</div>
     					</div>
     				</div>
@@ -295,19 +297,19 @@
         				<div class="col-sm-10 col-sm-offset-1">		
         					<div class="owl-carousel partners">
         						<div class="partner">
-        							<img src="img/service42.jpg" alt="Партнер">
+        							<img src="img/service41.jpg" alt="Партнер">
         						</div>
         						<div class="partner">
-        							<img src="img/service32.jpg" alt="Партнер">
+        							<img src="img/service31.jpg" alt="Партнер">
         						</div>
         						<div class="partner">
-        							<img src="img/service22.jpg" alt="Партнер">
+        							<img src="img/service21.jpg" alt="Партнер">
         						</div>
         						<div class="partner">
-        							<img src="img/service42.jpg" alt="Партнер">
+        							<img src="img/service41.jpg" alt="Партнер">
         						</div>
         						<div class="partner">
-        							<img src="img/service32.jpg" alt="Партнер">
+        							<img src="img/service31.jpg" alt="Партнер">
         						</div>
         					</div>
         				</div> 
@@ -319,10 +321,76 @@
         
         <div id="my-footer">
         	
-
+        	<div class="main-footer">
+        		<div class="container">
+        			<div class="row">
+        				<div class="col-lg-2 col-sm-4 col-xs-12">
+        					<div class="footer-column">
+        						<img src="img/logo.png" alt="салон красоты" class="logo-footer">
+        						<p>Салон красоты <br> бизнес класса в Киеве</p>
+        						<div class="social-footer">
+				        			<nav class="soc">
+				        				<ul>
+				        					<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+				        					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+				        					<li><a href="#"><i class="fab fa-vk"></i></a></li>
+				        				</ul>
+				        			</nav>
+				        		</div>
+        					</div>
+        				</div>
+        				<div class="col-lg-3 col-sm-4 col-xs-12">
+        					<div class="footer-column">
+        						<nav class="footer-menu">
+        							<ul>
+        								<li class="active"><a href="#">Парихмахерский сервис</a></li>
+        								<li><a href="#">Косметологический сервис</a></li>
+        								<li><a href="#">Маникюрный сервис</a></li>
+        								<li><a href="#">Массаж и SPA</a></li>
+        								<li><a href="#">Солярий</a></li>
+        								<li><a href="#">Наши специалисты</a></li>
+        							</ul>
+        						</nav>
+        					</div>
+        				</div>
+        				<div class="col-lg-3 col-sm-4 col-xs-12">
+        					<div class="footer-column">
+        						<p class="footer-addr">
+        							<i class="fa fa-location-arrow"></i>г.Киев ул.Киевская, д.15 м.Святошин
+        						</p>
+        						<p class="footer-addr">
+        							<i class="fa fa-clock-o"></i>Время работы: ежедневно, <br> 10:00 - 22:00
+        						</p>
+        						<p class="footer-addr"><span class="footer-phone">
+        							<i class="fa fa-mobile"></i></span>+38 (044) 222-33-44
+        						</p>
+        					</div>
+        				</div>
+        				<div class="col-lg-4 col-sm-12 col-xs-12">
+        					<div class="footer-column">
+        						<div class="map">
+        							<div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+		<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+        var setting = {"height":220,"width":450,"zoom":17,"queryString":"Винница, Винницкая область, Украина","place_id":"ChIJiWRaGWVbLUcR_nTd7lnh1Ms","satellite":false,"centerCoord":[49.23475387932203,28.469633896335917],"cid":"0xcbd4e159eedd74fe","lang":"ru","cityUrl":"/ukraine/vinnytsia-65554","cityAnchorText":"Карта [CITY1], Винница, Украина","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"439945"};
+        var d = document;
+        var s = d.createElement('script');
+        s.src = 'https://1map.com/js/script-for-user.js?embed_id=439945';
+        s.async = true;
+        s.onload = function (e) {
+          window.OneMap.initMap(setting)
+        };
+        var to = d.getElementsByTagName('script')[0];
+        to.parentNode.insertBefore(s, to);
+      })();</script><a href="https://1map.com/ru/map-embed">Карта</a></div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
         </div>
     </div> 
-
+    <div class="top" title="Наверх"><i class="fa fa-angle-double-up"></i></div>
 	
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="../js/jquery-1.11.1.min.js"></script>
